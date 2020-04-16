@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:61859/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:61859/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:61859/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServicoSoap" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetComments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComments" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetComments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCommentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetVideoComments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVideoComments" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetVideoComments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVideoCommentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRatings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRatings" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetRatings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRatingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetVideoRatings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVideoRatings" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetVideoRatings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVideoRatingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetVideos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVideos" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetVideos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVideosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSingleVideo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSingleVideo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetSingleVideo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSingleVideoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NewComment_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewComment" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NewComment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewCommentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NewRating_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewRating" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NewRating_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewRatingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteComment_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteComment" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteComment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCommentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NewVideo_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewVideo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NewVideo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewVideoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteVideo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteVideo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteVideo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteVideoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetComments">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetComments" message="tns:IService1_GetComments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCommentsResponse" message="tns:IService1_GetComments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVideoComments">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetVideoComments" message="tns:IService1_GetVideoComments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetVideoCommentsResponse" message="tns:IService1_GetVideoComments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRatings">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetRatings" message="tns:IService1_GetRatings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetRatingsResponse" message="tns:IService1_GetRatings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVideoRatings">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetVideoRatings" message="tns:IService1_GetVideoRatings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetVideoRatingsResponse" message="tns:IService1_GetVideoRatings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVideos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetVideos" message="tns:IService1_GetVideos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetVideosResponse" message="tns:IService1_GetVideos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleVideo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetSingleVideo" message="tns:IService1_GetSingleVideo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetSingleVideoResponse" message="tns:IService1_GetSingleVideo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewComment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/NewComment" message="tns:IService1_NewComment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/NewCommentResponse" message="tns:IService1_NewComment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewRating">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/NewRating" message="tns:IService1_NewRating_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/NewRatingResponse" message="tns:IService1_NewRating_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteComment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteComment" message="tns:IService1_DeleteComment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteCommentResponse" message="tns:IService1_DeleteComment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewVideo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/NewVideo" message="tns:IService1_NewVideo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/NewVideoResponse" message="tns:IService1_NewVideo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVideo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteVideo" message="tns:IService1_DeleteVideo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteVideoResponse" message="tns:IService1_DeleteVideo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetComments">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetComments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVideoComments">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetVideoComments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRatings">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetRatings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVideoRatings">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetVideoRatings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVideos">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetVideos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSingleVideo">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetSingleVideo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewComment">
+      <soap:operation soapAction="http://tempuri.org/IService1/NewComment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewRating">
+      <soap:operation soapAction="http://tempuri.org/IService1/NewRating" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteComment">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteComment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewVideo">
+      <soap:operation soapAction="http://tempuri.org/IService1/NewVideo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteVideo">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteVideo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:61859/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

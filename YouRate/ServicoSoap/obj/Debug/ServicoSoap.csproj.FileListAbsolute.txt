@@ -1,0 +1,21 @@
+C:\Users\170262014.INTRANET.001\Desktop\YouRate\ServicoSoap\bin\ServicoSoap.dll.config
+C:\Users\170262014.INTRANET.001\Desktop\YouRate\ServicoSoap\bin\ServicoSoap.dll
+C:\Users\170262014.INTRANET.001\Desktop\YouRate\ServicoSoap\bin\ServicoSoap.pdb
+C:\Users\170262014.INTRANET.001\Desktop\YouRate\ServicoSoap\obj\Debug\ServicoSoap.csprojAssemblyReference.cache
+C:\Users\170262014.INTRANET.001\Desktop\YouRate\ServicoSoap\obj\Debug\ServicoSoap.csproj.CoreCompileInputs.cache
+C:\Users\170262014.INTRANET.001\Desktop\YouRate\ServicoSoap\obj\Debug\ServicoSoap.dll
+C:\Users\170262014.INTRANET.001\Desktop\YouRate\ServicoSoap\obj\Debug\ServicoSoap.pdb
+C:\Users\Gui\Desktop\You rating\YouRate\ServicoSoap\bin\ServicoSoap.dll.config
+C:\Users\Gui\Desktop\You rating\YouRate\ServicoSoap\bin\ServicoSoap.dll
+C:\Users\Gui\Desktop\You rating\YouRate\ServicoSoap\bin\ServicoSoap.pdb
+C:\Users\Gui\Desktop\You rating\YouRate\ServicoSoap\obj\Debug\ServicoSoap.csprojAssemblyReference.cache
+C:\Users\Gui\Desktop\You rating\YouRate\ServicoSoap\obj\Debug\ServicoSoap.csproj.CoreCompileInputs.cache
+C:\Users\Gui\Desktop\You rating\YouRate\ServicoSoap\obj\Debug\ServicoSoap.dll
+C:\Users\Gui\Desktop\You rating\YouRate\ServicoSoap\obj\Debug\ServicoSoap.pdb
+C:\Users\170262014.INTRANET.001\Desktop\You rating\YouRate\ServicoSoap\bin\ServicoSoap.dll.config
+C:\Users\170262014.INTRANET.001\Desktop\You rating\YouRate\ServicoSoap\bin\ServicoSoap.dll
+C:\Users\170262014.INTRANET.001\Desktop\You rating\YouRate\ServicoSoap\bin\ServicoSoap.pdb
+C:\Users\170262014.INTRANET.001\Desktop\You rating\YouRate\ServicoSoap\obj\Debug\ServicoSoap.csprojAssemblyReference.cache
+C:\Users\170262014.INTRANET.001\Desktop\You rating\YouRate\ServicoSoap\obj\Debug\ServicoSoap.csproj.CoreCompileInputs.cache
+C:\Users\170262014.INTRANET.001\Desktop\You rating\YouRate\ServicoSoap\obj\Debug\ServicoSoap.dll
+C:\Users\170262014.INTRANET.001\Desktop\You rating\YouRate\ServicoSoap\obj\Debug\ServicoSoap.pdb
